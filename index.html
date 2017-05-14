@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Lou Bettini</title>
     <meta charset="utf-8"/>
@@ -217,101 +217,101 @@
                 <h2>Mise en place d'un systeme de deploiement automatique d'os et de paquet pour la configation des
                     ordinateurs composant le parcs d'IVSTORE</h2>
                 <iframe src="images/doc(1).pdf" width="500" height="600" align="middle"></iframe>
+
+            </section>
+        </article>
     </div>
-
-
 </div>
-</section>
-</article>
-
-
-<!-- Contact -->
-<article id="ppe3" class="panel">
+<article id="veille" class="panel">
     <header>
-        <a href="PPE3.html">dossier complet</a>
+        <h1>projets en formation</h1>
     </header>
-    <h1>
-        NO SQL
-    </h1>
+
     <section>
-        <div class="row">
-            <div class="4u 12u$(mobile)">
-               <span> NoSQL signifie “Not Only SQL”, littéralement “pas seulement SQL”.
-                Ce terme désigne l’ensemble des bases de données qui s’opposent à la notion relationnelle des SGBDR.
-                La définition, “pas seulement SQL”, apporte un début de réponse à la question “Est ce que le NoSQL va
-                tuer les bases relationnelles?”.
-                En effet, NoSQL ne vient pas remplacer les BD relationnelles mais proposer une alternative
-                ou compléter les fonctionnalités des SGBDR pour donner des solutions plus intéressantes dans certains
-                contextes.
-               </span>
-                <h2>Mais pourquoi le NoSQL ?</h2>
+        <p>
+        <h1>veille 1</h1></p>
+        <h2>NO SQL</h2>
+        
+        <p>
+        <h3>NoSQL signifie “Not Only SQL”, littéralement “pas seulement SQL”.
+        Ce terme désigne l’ensemble des bases de données qui s’opposent à la notion relationnelle des SGBDR.
+        La définition, “pas seulement SQL”, apporte un début de réponse à la question “Est ce que le NoSQL va tuer
+        les bases relationnelles?”.
+        En effet, NoSQL ne vient pas remplacer les BD relationnelles mais proposer une alternative ou
+        compléter les fonctionnalités des SGBDR pour donner des solutions plus intéressantes dans certains contextes.
+        </h3></p>
 
-               <span> Le premier besoin fondamental auquel répond NoSQL est la performance. En effet, ces dernières années, les géants du Web comme Google et Amazon ont vu leurs besoins en termes de charge et de volumétrie de données croître de façon exponentielle. Et c’est pour répondre à ces besoins que ses solutions ont vu le jour. Les architectes de ces organisations ont procédé à des compromis sur le caractère ACID des SGBDR. Ces intelligents compromis sur la notion de relationnel ont permis de dégager les SGBDR de leurs freins à la scalabilité horizontale et à l’évolutivité. Par la suite des entreprises comme Facebook, Twitter ou encore LinkedIn ont migré une partie de leurs données sur des bases NoSQL. Cette adoption croissante des bases NoSQL conduit à une multiplication et une amélioration des offres Open Source des moteurs.
-                Plus de relationnel, mais quelles autres caractéristiques?
-                Ne plus répondre au modèle relationnel est la caractéristique principale des bases de données NoSQL. Les bases de données NoSQL répondent aussi au théorème du CAP d’Eric Brewer qui est plus adapté aux systèmes distribués. Ce théorème énonce que tout système distribué peut répondre aux contraintes suivantes:
-               </span>
+        <p>
+        <h3>Le premier besoin fondamental auquel répond NoSQL est la performance.
+        En effet, ces dernières années, les géants du Web comme Google
+        et Amazon ont vu leurs besoins en termes de charge et de volumétrie de données croître de façon exponentielle.
+        Et c’est pour répondre à ces besoins que ses solutions ont vu le jour.
+        Les architectes de ces organisations ont procédé à des compromis sur le caractère ACID des SGBDR.
+        Ces intelligents compromis sur la notion de relationnel ont permis de dégager les SGBDR de leurs freins à
+        la scalabilité horizontale et à l’évolutivité.
+        Par la suite des entreprises comme Facebook, Twitter ou encore LinkedIn ont migré une partie de leurs données
+        sur des bases NoSQL. Cette adoption croissante des bases NoSQL conduit à une multiplication et une
+        amélioration des offres Open Source des moteurs.
+        Plus de relationnel, mais quelles autres caractéristiques?
+        Ne plus répondre au modèle relationnel est la caractéristique principale des bases de données NoSQL.
+        Les bases de données NoSQL répondent aussi au théorème du CAP d’Eric Brewer qui est plus adapté
+        aux systèmes distribués. Ce théorème énonce que tout système distribué peut répondre aux
+        contraintes suivantes:
 
-                <span>Cohérence : tous les noeuds du système voient exactement les mêmes données au même moment
-                Haute disponibilité (Availability) : en cas de panne, les données restent accessibles
-                Tolérance au Partitionnement : le système peut être partitionné
-                </span>
+        Cohérence : tous les noeuds du système voient exactement les mêmes données au même moment
+        Haute disponibilité (Availability) : en cas de panne, les données restent accessibles
+        Tolérance au Partitionnement : le système peut être partitionné
 
-                <span>Mais le théorème du CAP précise aussi que seulement deux de ces trois contraintes peuvent être respectées en même temps.
-                D’autres caractéristiques communes aux différentes bases de données NoSQL peuvent être citées tel que le partitionnement horizontal sur plusieurs noeuds, la réplication des données, les schémas dynamiques ou l’absence de schéma.
-                Plusieurs bases de données NoSQL, mais de quels types?
-                </span>
+        Mais le théorème du CAP précise aussi que seulement deux de ces trois contraintes peuvent être
+        respectées en même temps.
+        D’autres caractéristiques communes aux différentes bases de données NoSQL peuvent être citées
+        tel que le partitionnement horizontal sur plusieurs noeuds, la réplication des données,
+        les schémas dynamiques ou l’absence de schéma.</h3></p>
+        <p><h3>
+        Les solutions NoSQL existantes peuvent être regroupées en 4 grandes familles.
 
-                <h3>Les solutions NoSQL existantes peuvent être regroupées en 4 grandes familles:</h3>
+       <p> Clé / valeur : Ce modèle peut être assimilé à une hashmap distribuée.
+        Les données sont, donc, simplement représentées par un couple clé/valeur.
+        La valeur peut être une simple chaîne de caractères, un objet sérialisé… Cette absence de
+        structure ou de typage ont un impact important sur le requêtage.
+        En effet, toute l’intelligence portée auparavant par les requêtes SQL devra être portée par
+        l’applicatif qui interroge la BD. Néanmoins, la communication avec la BD se résumera aux opérations PUT,
+        GET et DELETE. Les solutions les plus connues sont Redis, Riak et Voldemort créé par LinkedIn.
+    </p>
+        <p>Orienté colonne : Ce modèle ressemble à première vue à une table dans un SGBDR à
+            la différence qu’avec une BD NoSQL orientée colonne, le nombre de colonnes est dynamique.
+            En effet, dans une table relationnelle, le nombre de colonnes est fixé dés la création du schéma de la
+            table et ce nombre reste le même pour tous les enregistrements dans cette table.
+            Par contre, avec ce modèle, le nombre de colonnes peut varier d’un enregistrement à
+            un autre ce qui évite de retrouver des colonnes ayant des valeurs NULL. Comme solutions
+            , on retrouve principalement HBase (implémentation Open Source du modèle BigTable publié par Google)
+            ainsi que Cassandra (projet Apache qui respecte l’architecture distribuée de Dynamo d’Amazon
+            et le modèle BigTable de Google).
+        </p>
+        <p>Orienté document : Ce modèle se base sur le paradigme clé valeur. La valeur,
+            dans ce cas, est un document de type JSON ou XML. L’avantage est de pouvoir récupérer,
+            via une seule clé, un ensemble d’informations structurées de manière hiérarchique.
+            La même opération dans le monde relationnel impliquerait plusieurs jointures.
+            Pour ce modèle, les implémentations les plus populaires sont CouchDB d’Apache
+            , RavenDB (destiné aux plateformes .NET/Windows avec la possibilité d’interrogation via LINQ) et MongoDB.
+        </p>
+        <p>Orienté graphe : Ce modèle de représentation des données se base sur la théorie des graphes.
+            Il s’appuie sur la notion de noeuds, de relations et de propriétés qui leur sont rattachées.
+            Ce modèle facilite la représentation du monde réel, ce qui le rend adapté au traitement des données des réseaux
+            sociaux. La principale solution est Neo4J.
+        </p>
+        Les deux mouvements “orienté colonne” et “orienté document” découlent bien d
+        u système clé valeur et c’est la nature ou la structure de la valeur qui diffère.
+    </h3></p>
 
-                <span>Clé / valeur : Ce modèle peut être assimilé à une hashmap distribuée. Les données sont, donc, simplement représentées par un couple clé/valeur. La valeur peut être une simple chaîne de caractères, un objet sérialisé… Cette absence de structure ou de typage ont un impact important sur le requêtage. En effet, toute l’intelligence portée auparavant par les requêtes SQL devra être portée par l’applicatif qui interroge la BD. Néanmoins, la communication avec la BD se résumera aux opérations PUT, GET et DELETE. Les solutions les plus connues sont Redis, Riak et Voldemort créé par LinkedIn.</span>
+        <!--<a href="PPE2.html" style="align-self: center"  class="btn btn-default btn-lg" type="button" > description complete</a>-->
+        </br>
+        </br>
+        </br>
 
-               <span> Orienté colonne : Ce modèle ressemble à première vue à une table dans un SGBDR à la différence qu’avec une BD NoSQL orientée colonne, le nombre de colonnes est dynamique. En effet, dans une table relationnelle, le nombre de colonnes est fixé dés la création du schéma de la table et ce nombre reste le même pour tous les enregistrements dans cette table. Par contre, avec ce modèle, le nombre de colonnes peut varier d’un enregistrement à un autre ce qui évite de retrouver des colonnes ayant des valeurs NULL. Comme solutions, on retrouve principalement HBase (implémentation Open Source du modèle BigTable publié par Google) ainsi que Cassandra (projet Apache qui respecte l’architecture distribuée de Dynamo d’Amazon et le modèle BigTable de Google).
-                    </span>
-                <span>Orienté document : Ce modèle se base sur le paradigme clé valeur. La valeur, dans ce cas, est un document de type JSON ou XML. L’avantage est de pouvoir récupérer, via une seule clé, un ensemble d’informations structurées de manière hiérarchique. La même opération dans le monde relationnel impliquerait plusieurs jointures. Pour ce modèle, les implémentations les plus populaires sont CouchDB d’Apache, RavenDB (destiné aux plateformes .NET/Windows avec la possibilité d’interrogation via LINQ) et MongoDB.
-                    </span>
-                <span>Orienté graphe : Ce modèle de représentation des données se base sur la théorie des graphes. Il s’appuie sur la notion de noeuds, de relations et de propriétés qui leur sont rattachées. Ce modèle facilite la représentation du monde réel, ce qui le rend adapté au traitement des données des réseaux sociaux. La principale solution est Neo4J.
-                </span>
-                Les deux mouvements “orienté colonne” et “orienté document” découlent bien du système clé valeur et c’est la nature ou la structure de la valeur qui diffère.
-            </div>
-
-        </div>
     </section>
 </article>
-<!-- toto -->
-<article id="ppe4" class="panel">
-    <header>
-        <a href="PPE4.html">dossier complet</a>
-    </header>
-    <h1>
-        Contexte professionel
-    </h1>
-    <section>
-        <div class="row">
-            <div class="4u 12u$(mobile)">
-                To DO ecrire le contexte professionnel + mettre un lien vers la feuille de contexte
-            </div>
 
-        </div>
-    </section>
-</article>
-<article id="portefeuille" class="panel">
-    <header>
-        <a href="PPE4.html">dossier complet</a>
-    </header>
-    <h1>
-        Contexte professionel
-    </h1>
-    <section>
-        <div class="row">
-            <div class="4u 12u$(mobile)">
-                To DO ecrire le contexte professionnel + mettre un lien vers la feuille de contexte
-            </div>
-
-        </div>
-    </section>
-</article>
-
-</div>
 
 <!-- Footer -->
 <div id="footer">
